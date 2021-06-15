@@ -5,6 +5,8 @@ import "@trussworks/react-uswds/lib/index.css";
 import { Header, Title, PrimaryNav } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
+import "./styles/index.scss";
+
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 
@@ -19,7 +21,6 @@ const App = () => {
   ];
 
   return (
-    <Suspense fallback="loading">
       <Router>
         <Header extended={true}>
           <Title>{t("Project Title")}</Title>
@@ -35,7 +36,6 @@ const App = () => {
         </Switch>
         {/* footer */}
       </Router>
-    </Suspense>
   );
 };
 
