@@ -25,16 +25,15 @@ const App = () => {
           <Title>{t("Project Title")}</Title>
           <PrimaryNav items={navItems} />
         </Header>
-        <div>
-          <Switch>
-            <Route path={contactRoute}>
-              <Contact />
-            </Route>
-            <Route path={teamRoute}>
-              <Team />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route path={contactRoute}>
+            <Contact />
+          </Route>
+          <Route path={teamRoute}>
+            <Team />
+          </Route>
+        </Switch>
+        {/* footer */}
       </Router>
     </Suspense>
   );
