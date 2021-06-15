@@ -20,7 +20,7 @@ const ContactForm = () => {
         id="input-message"
         name="input-message"
       />
-      <Button type="button">{t("Submit")}</Button>
+      <Button type="submit">{t("Submit")}</Button>
     </Form>
   );
 };

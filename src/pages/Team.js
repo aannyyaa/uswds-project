@@ -1,8 +1,10 @@
 import React from "react";
 import { CardGroup } from "@trussworks/react-uswds";
+import { useTranslation } from "react-i18next";
 
 import TeamCard from "../components/TeamCard";
 
+//hard coded data here for now
 const DATA = [
   {
     id: "1",
@@ -32,8 +34,10 @@ const DATA = [
 ];
 
 const Team = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
+      <h2>{t("Meet Our Team")}</h2>
       <CardGroup>
         {DATA.map((elem) => {
           return <TeamCard key={elem.id} name={elem.name} info={elem.info} />;
