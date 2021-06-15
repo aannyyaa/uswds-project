@@ -8,6 +8,7 @@ import {
 const Team = ({name, info}) => {
   return (
     <Card
+    gridLayout={{desktop: {col: 4}}}
     containerProps={{ className: 'bg-base-lightest border-0' }}>
         <CardHeader>{name}</CardHeader>
         <CardBody>{info}</CardBody>
