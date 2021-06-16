@@ -40,7 +40,7 @@ const App = () => {
   return (
     <Router>
       <Header extended={true}>
-        <Title>{t("Project Title")}</Title>
+        <Title>{t("Civic Innovation Corps @ NYC MOCTO")}</Title>
         <PrimaryNav items={navItems} />
       </Header>
       <Switch>
@@ -58,7 +58,7 @@ const App = () => {
           <Logo
             size="slim"
             image={<img className="usa-footer__logo-img" src="" alt="" />}
-            heading={<p className="usa-footer__logo-heading">{t("Agency")}</p>}
+            heading={<p className="usa-footer__logo-heading">{t("NYC MOCTO")}</p>}
           />
         }
       />
