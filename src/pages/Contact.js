@@ -8,7 +8,7 @@ const Contact = () => {
   const { t, i18n } = useTranslation();
   return (
     <GridContainer>
-      <h2>{t("Contact Us")}</h2>
+      <h2>{t("subheadings.contact")}</h2>
       <ContactForm />
     </GridContainer>
   );

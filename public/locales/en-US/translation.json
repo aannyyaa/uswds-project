@@ -1,7 +1,13 @@
 {
   "projectTitle": "Civic Innovation Corps @ NYC MOCTO",
-  "team": "Team",
-  "meetTeam": "Meet Our Team",
+  "links": {
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "subheadings": {
+    "team": "Meet Our Team",
+    "contact": "Contact Us"
+  },
   "teamMembers": [
     {
       "id": "1",
@@ -34,7 +40,11 @@
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UE1PJ3P0-2061361ad9fe-512"
     }
   ],
-  "contact": "Contact",
-  "contactUs": "Contact Us",
-  "agency": "NYC MOCTO"
+  "agency": "NYC MOCTO",
+  "form": {
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit"
+  }
 }

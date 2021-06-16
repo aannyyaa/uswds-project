@@ -42,7 +42,7 @@ const Team = () => {
   const { t, i18n } = useTranslation();
   return (
     <GridContainer>
-      <h2>{t("Meet Our Team")}</h2>
+      <h2>{t("subheadings.team")}</h2>
       <CardGroup>
         {DATA.map((elem) => {
           return <TeamCard key={elem.id} name={elem.name} info={elem.info} photo={elem.photo}/>;

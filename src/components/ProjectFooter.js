@@ -15,10 +15,10 @@ const ProjectFooter = () => {
 
   const footerNavItems = [
     <Link to={teamRoute} className="usa-footer__primary-link">
-      {t("Team")}
+      {t("links.team")}
     </Link>,
     <Link to={contactRoute} className="usa-footer__primary-link">
-      {t("Contact")}
+      {t("links.contact")}
     </Link>,
   ];
 
@@ -31,7 +31,7 @@ const ProjectFooter = () => {
             size="slim"
             image={<img className="usa-footer__logo-img" src="" alt="" />}
             heading={
-              <p className="usa-footer__logo-heading">{t("NYC MOCTO")}</p>
+              <p className="usa-footer__logo-heading">{t("agency")}</p>
             }
           />
         }

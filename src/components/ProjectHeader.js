@@ -5,7 +5,6 @@ import {
   Title,
   PrimaryNav,
   NavMenuButton,
-
 } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
@@ -18,20 +17,20 @@ const ProjectHeader = () => {
   const contactRoute = "/contact";
   const teamRoute = "/";
   const navItems = [
-    <Link to={teamRoute}>{t("Team")}</Link>,
-    <Link to={contactRoute}>{t("Contact")}</Link>,
+    <Link to={teamRoute}>{t("team")}</Link>,
+    <Link to={contactRoute}>{t("contact")}</Link>,
   ];
 
   return (
-      <Header extended={true}>
-        <Title>{t("Civic Innovation Corps @ NYC MOCTO")}</Title>
-        <NavMenuButton label="Menu" onClick={onClick} />
-        <PrimaryNav
-          items={navItems}
-          mobileExpanded={expanded}
-          onToggleMobileNav={onClick}
-        />
-      </Header>
+    <Header extended={true}>
+      <Title>{t("projectTitle")}</Title>
+      <NavMenuButton label="Menu" onClick={onClick} />
+      <PrimaryNav
+        items={navItems}
+        mobileExpanded={expanded}
+        onToggleMobileNav={onClick}
+      />
+    </Header>
   );
 };
 
