@@ -8,7 +8,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 const ProjectFooter = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const contactRoute = "/contact";
   const teamRoute = "/";

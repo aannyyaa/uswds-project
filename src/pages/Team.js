@@ -1,11 +1,11 @@
 import React from "react";
-import { CardGroup, Grid, GridContainer } from "@trussworks/react-uswds";
+import { CardGroup, GridContainer } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
 import TeamCard from "../components/TeamCard";
 
 const Team = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <GridContainer>
       <h2>{t("subheadings.team")}</h2>

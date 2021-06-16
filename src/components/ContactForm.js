@@ -8,7 +8,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Form onSubmit={() => {console.log("Submit!")}}>
       <Label htmlFor="input-email">{t("form.email")}</Label>

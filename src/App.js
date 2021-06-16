@@ -6,17 +6,16 @@ import { useTranslation } from "react-i18next";
 
 import "./styles/index.scss";
 
-import ProjectHeader  from "./components/ProjectHeader";
+import ProjectHeader from "./components/ProjectHeader";
 import ProjectFooter from "./components/ProjectFooter";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 
 const App = () => {
-  //will connect to translation file in future (public/locales/en-US/translation.json)
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const contactRoute = "/contact";
-  const teamRoute = "/";
+  const contactRoute = t("links.contactRoute");
+  const teamRoute = t("links.teamRoute");
 
   return (
     <Router>

@@ -9,7 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 const ProjectHeader = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [expanded, setExpanded] = useState(false);
   const onClick = () => setExpanded((prvExpanded) => !prvExpanded);
