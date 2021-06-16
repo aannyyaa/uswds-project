@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 const ContactForm = () => {
   const { t, i18n } = useTranslation();
   return (
-    <Form onSubmit={() => {}}>
+    <Form onSubmit={() => {console.log("Submit!")}}>
       <Label htmlFor="input-email">{t("Email")}</Label>
       <TextInput id="input-email" name="input-email" type="text" />
       <Label htmlFor="input-subject">{t("Subject")}</Label>
