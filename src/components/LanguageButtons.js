@@ -2,7 +2,7 @@ import React from "react";
 import { GridContainer, Grid, Button } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
-const App = () => {
+const LanguageButton = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -38,4 +38,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default LanguageButton;
