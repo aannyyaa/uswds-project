@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 const ProjectFooter = () => {
   const { t } = useTranslation();
 
-  const contactRoute = "/contact";
-  const teamRoute = "/";
+  const contactRoute = t("links.contactRoute");
+  const teamRoute = t("links.teamRoute");
 
   const footerNavItems = [
     <Link to={teamRoute} className="usa-footer__primary-link">

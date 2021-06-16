@@ -1,52 +1,52 @@
 {
-  "projectTitle": "[Chinese Translation in Progress] Civic Innovation Corps @ NYC MOCTO",
+  "projectTitle": "[zh] Civic Innovation Corps @ NYC MOCTO",
   "links": {
-    "team": "[Chinese Translation in Progress] Team",
+    "team": "[zh] Team",
     "teamRoute": "/",
-    "contact": "[Chinese Translation in Progress] Contact",
+    "contact": "[zh] Contact",
     "contactRoute": "/contact"
   },
   "subheadings": {
-    "team": "[Chinese Translation in Progress] Meet Our Team",
-    "contact": "[Chinese Translation in Progress] Contact Us"
+    "team": "[zh] Meet Our Team",
+    "contact": "[zh] Contact Us"
   },
   "teamMembers": [
     {
       "id": "1",
-      "name": "[Chinese Translation in Progress] Britney Johnson",
-      "info": "[Chinese Translation in Progress] Civic Innovation Corps Member",
+      "name": "[zh] Britney Johnson",
+      "info": "[zh] Civic Innovation Corps Member",
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UM1AU2V9-4ca04b1b0dee-512"
     },
     {
       "id": "2",
-      "name": "[Chinese Translation in Progress] Kara Siegel",
-      "info": "[Chinese Translation in Progress] Civic Innovation Corps Member",
+      "name": "[zh] Kara Siegel",
+      "info": "[zh] Civic Innovation Corps Member",
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01VAJR5W72-d813fd8f70df-512"
     },
     {
       "id": "3",
-      "name": "[Chinese Translation in Progress] Michelle Liu",
-      "info": "[Chinese Translation in Progress] Civic Innovation Corps Member",
+      "name": "[zh] Michelle Liu",
+      "info": "[zh] Civic Innovation Corps Member",
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UZD4LNUR-bbe96e1072eb-512"
     },
     {
       "id": "4",
-      "name": "[Chinese Translation in Progress] Saiful Islam",
-      "info": "[Chinese Translation in Progress] Civic Innovation Corps Member",
+      "name": "[zh] Saiful Islam",
+      "info": "[zh] Civic Innovation Corps Member",
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01ULQH5BGS-15f7b717daa2-512"
     },
     {
       "id": "5",
-      "name": "[Chinese Translation in Progress] Anya Dunaif",
-      "info": "[Chinese Translation in Progress] Civic Innovation Corps Member",
+      "name": "[zh] Anya Dunaif",
+      "info": "[zh] Civic Innovation Corps Member",
       "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UE1PJ3P0-2061361ad9fe-512"
     }
   ],
-  "agency": "[Chinese Translation in Progress] NYC MOCTO",
+  "agency": "[zh] NYC MOCTO",
   "form": {
-    "email": "[Chinese Translation in Progress] Email",
-    "subject": "[Chinese Translation in Progress] Subject",
-    "message": "[Chinese Translation in Progress] Message",
-    "submit": "[Chinese Translation in Progress] Submit"
+    "email": "[zh] Email",
+    "subject": "[zh] Subject",
+    "message": "[zh] Message",
+    "submit": "[zh] Submit"
   }
 }
