@@ -1,20 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
-import {
-  Header,
-  Title,
-  PrimaryNav,
-  Footer,
-  FooterNav,
-  Address,
-  Logo,
-} from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
 import "./styles/index.scss";
 
+import ProjectHeader  from "./components/ProjectHeader";
+import ProjectFooter from "./components/ProjectFooter";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 
@@ -24,25 +17,10 @@ const App = () => {
 
   const contactRoute = "/contact";
   const teamRoute = "/";
-  const navItems = [
-    <Link to={teamRoute}>{t("Team")}</Link>,
-    <Link to={contactRoute}>{t("Contact")}</Link>,
-  ];
-  const footerNavItems = [
-    <Link to={teamRoute} className="usa-footer__primary-link">
-      {t("Team")}
-    </Link>,
-    <Link to={contactRoute} className="usa-footer__primary-link">
-      {t("Contact")}
-    </Link>,
-  ];
 
   return (
     <Router>
-      <Header extended={true}>
-        <Title>{t("Civic Innovation Corps @ NYC MOCTO")}</Title>
-        <PrimaryNav items={navItems} />
-      </Header>
+      <ProjectHeader />
       <Switch>
         <Route path={contactRoute}>
           <Contact />
@@ -51,17 +29,7 @@ const App = () => {
           <Team />
         </Route>
       </Switch>
-      <Footer
-        size="slim"
-        primary={<FooterNav size="slim" links={footerNavItems} />}
-        secondary={
-          <Logo
-            size="slim"
-            image={<img className="usa-footer__logo-img" src="" alt="" />}
-            heading={<p className="usa-footer__logo-heading">{t("NYC MOCTO")}</p>}
-          />
-        }
-      />
+      <ProjectFooter />
     </Router>
   );
 };
