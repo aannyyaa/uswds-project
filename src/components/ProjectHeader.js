@@ -17,8 +17,8 @@ const ProjectHeader = () => {
   const contactRoute = "/contact";
   const teamRoute = "/";
   const navItems = [
-    <Link to={teamRoute}>{t("team")}</Link>,
-    <Link to={contactRoute}>{t("contact")}</Link>,
+    <Link to={teamRoute}>{t("links.team")}</Link>,
+    <Link to={contactRoute}>{t("links.contact")}</Link>,
   ];
 
   return (
