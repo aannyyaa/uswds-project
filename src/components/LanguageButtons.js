@@ -25,12 +25,12 @@ const LanguageButton = () => {
         </Grid>
         <Grid>
           <Button type="button" unstyled onClick={() => changeLanguage("es")}>
-            Spanish
+            Español
           </Button>
         </Grid>
         <Grid>
           <Button type="button" unstyled onClick={() => changeLanguage("zh")}>
-            Chinese
+            中文
           </Button>
         </Grid>
       </Grid>

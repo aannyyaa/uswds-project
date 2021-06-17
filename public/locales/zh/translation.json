@@ -48,5 +48,8 @@
     "subject": "[zh] Subject",
     "message": "[zh] Message",
     "submit": "[zh] Submit"
+  },
+  "images": {
+    "teamMemberPhoto": "[zh] team member"
   }
 }

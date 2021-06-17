@@ -48,5 +48,8 @@
     "subject": "Subject",
     "message": "Message",
     "submit": "Submit"
+  },
+  "images": {
+    "teamMemberPhoto": "team member"
   }
 }

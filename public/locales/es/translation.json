@@ -48,5 +48,8 @@
     "subject": "[es] Subject",
     "message": "[es] Message",
     "submit": "[es] Submit"
+  },
+  "images": {
+    "teamMemberPhoto": "[es] team member"
   }
 }
