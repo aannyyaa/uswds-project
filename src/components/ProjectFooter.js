@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Footer,
-  FooterNav,
-  Logo,
-} from "@trussworks/react-uswds";
+import { Footer, FooterNav, Logo } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
 const ProjectFooter = () => {
@@ -23,19 +19,17 @@ const ProjectFooter = () => {
   ];
 
   return (
-      <Footer
-        size="slim"
-        primary={<FooterNav size="slim" links={footerNavItems} />}
-        secondary={
-          <Logo
-            size="slim"
-            image={<img className="usa-footer__logo-img" src="" alt="" />}
-            heading={
-              <p className="usa-footer__logo-heading">{t("agency")}</p>
-            }
-          />
-        }
-      />
+    <Footer
+      size="slim"
+      primary={<FooterNav size="slim" links={footerNavItems} />}
+      secondary={
+        <Logo
+          size="slim"
+          image={<img className="usa-footer__logo-img" src="" alt="" />}
+          heading={<p className="usa-footer__logo-heading">{t("agency")}</p>}
+        />
+      }
+    />
   );
 };
 

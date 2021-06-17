@@ -9,8 +9,6 @@ const LanguageButton = () => {
     i18n.changeLanguage(lng);
   };
 
-  //the es button is not working, but the zh and en-US ones are. For es, I get the error: "missingKey es translation"
-
   return (
     <GridContainer>
       <Grid row gap>

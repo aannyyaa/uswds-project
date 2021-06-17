@@ -14,7 +14,7 @@ const Team = ({ name, info, photo }) => {
         <img src={photo} alt={t("images.teamMemberPhoto")} />
       </CardMedia>
       <CardHeader>
-        <h3 className="usa-card__heading">{name}</h3>
+        <h3>{name}</h3>
       </CardHeader>
       <CardBody>{info}</CardBody>
     </Card>
