@@ -2,12 +2,9 @@ import React from "react";
 import { GridContainer, Grid, Button } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
-const LanguageButton = () => {
-  const { i18n } = useTranslation();
+const LanguageButton = ( {changeLanguage}) => {
+ 
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   return (
     <GridContainer>
