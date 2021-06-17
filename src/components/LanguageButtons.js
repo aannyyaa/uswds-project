@@ -1,24 +1,20 @@
 import React from "react";
 import { GridContainer, Grid, Button } from "@trussworks/react-uswds";
-import { useTranslation } from "react-i18next";
 
-const LanguageButton = ( {changeLanguage}) => {
- 
-
-
+const LanguageButton = ({ changeLanguage }) => {
   return (
     <GridContainer>
       <Grid row gap>
-        <Grid >
+        <Grid>
           <Button
             type="button"
             unstyled
-            onClick={() => changeLanguage("en-us")}
+            onClick={() => changeLanguage("en")}
           >
             English
           </Button>
         </Grid>
-        <Grid >
+        <Grid>
           <Button type="button" unstyled onClick={() => changeLanguage("es")}>
             Español
           </Button>

@@ -22,10 +22,12 @@ const App = () => {
   const contactRoute = t("links.contactRoute");
   const teamRoute = t("links.teamRoute");
 
+  console.log(teamRoute)
+
   return (
-    <Router basename={`/${i18n.language}`}>
+    <Router>
       <LanguageButtons changeLanguage={changeLanguage} />
-      <ProjectHeader />
+      <ProjectHeader contactRoute={contactRoute} teamRoute={teamRoute} />
       <Switch>
         <Route path={contactRoute}>
           <Contact />
@@ -34,7 +36,7 @@ const App = () => {
           <Team />
         </Route>
       </Switch>
-      <ProjectFooter />
+      <ProjectFooter contactRoute={contactRoute} teamRoute={teamRoute}/>
     </Router>
   );
 };
