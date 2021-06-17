@@ -5,7 +5,7 @@ $theme-image-path: "~uswds/src/img";
 $theme-respect-user-font-size: false;
 $theme-root-font-size: 14px;
 $theme-font-path: "~uswds/src/fonts";
-$theme-font-type-sans: "source-sans-pro";
+$theme-font-type-sans: "public-sans";
 $theme-style-body-element: true;
 
 /* SPACING */
@@ -16,7 +16,6 @@ $theme-hero-image: "~uswds/src/img/hero.png";
 
 $theme-text-color: "accent-cool-darker";
 $theme-link-color: "accent-cool";
-$theme-link-visited-color: "violet-50v";
-$theme-input-tile-border-color: "accent-cool";
-$theme-border-color: "accent-cool";
-
+$theme-link-hover-color: "violet-40v";
+$theme-link-visited-color: "violet-40v";
+$theme-body-font-size: "md";

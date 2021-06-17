@@ -12,7 +12,7 @@ const LanguageButton = () => {
   return (
     <GridContainer>
       <Grid row gap>
-        <Grid>
+        <Grid >
           <Button
             type="button"
             unstyled
@@ -21,7 +21,7 @@ const LanguageButton = () => {
             English
           </Button>
         </Grid>
-        <Grid>
+        <Grid >
           <Button type="button" unstyled onClick={() => changeLanguage("es")}>
             Español
           </Button>
