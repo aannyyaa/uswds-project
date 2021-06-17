@@ -15,31 +15,41 @@
       "id": "1",
       "name": "[zh] Britney Johnson",
       "info": "[zh] Civic Innovation Corps Member",
-      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UM1AU2V9-4ca04b1b0dee-512"
+      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UM1AU2V9-4ca04b1b0dee-512",
+      "role": "[zh] Software Engineer",
+      "year": "[zh] 2021"
     },
     {
       "id": "2",
       "name": "[zh] Kara Siegel",
       "info": "[zh] Civic Innovation Corps Member",
-      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01VAJR5W72-d813fd8f70df-512"
+      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01VAJR5W72-d813fd8f70df-512",
+      "role": "[zh] Software Engineer",
+      "year": "[zh] 2021"
     },
     {
       "id": "3",
       "name": "[zh] Michelle Liu",
       "info": "[zh] Civic Innovation Corps Member",
-      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UZD4LNUR-bbe96e1072eb-512"
+      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UZD4LNUR-bbe96e1072eb-512",
+      "role": "[zh] Software Engineer",
+      "year": "[zh] 2021"
     },
     {
       "id": "4",
       "name": "[zh] Saiful Islam",
       "info": "[zh] Civic Innovation Corps Member",
-      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01ULQH5BGS-15f7b717daa2-512"
+      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01ULQH5BGS-15f7b717daa2-512",
+      "role": "[zh] Software Engineer",
+      "year": "[zh] 2021"
     },
     {
       "id": "5",
       "name": "[zh] Anya Dunaif",
       "info": "[zh] Civic Innovation Corps Member",
-      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UE1PJ3P0-2061361ad9fe-512"
+      "photo": "https://ca.slack-edge.com/T01UA6VHC7Q-U01UE1PJ3P0-2061361ad9fe-512",
+      "role": "[zh] Software Engineer",
+      "year": "[zh] 2021"
     }
   ],
   "agency": "[zh] NYC MOCTO",
@@ -51,5 +61,6 @@
   },
   "images": {
     "teamMemberPhoto": "[zh] team member"
-  }
+  },
+  "language": "zh"
 }

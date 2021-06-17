@@ -17,6 +17,8 @@ const Team = () => {
               name={elem.name}
               info={elem.info}
               photo={elem.photo}
+              role={elem.role}
+              year={elem.year}
             />
           );
         })}

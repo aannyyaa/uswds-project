@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardMedia } from "@trussworks/react-uswds";
+import { Card, CardHeader, CardBody, CardMedia, CardFooter, Tag } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
-const Team = ({ name, info, photo }) => {  
+const Team = ({ name, info, photo, role, year }) => {  
   const { t } = useTranslation();
 
   return (
@@ -14,9 +14,17 @@ const Team = ({ name, info, photo }) => {
         <img src={photo} alt={t("images.teamMemberPhoto")} />
       </CardMedia>
       <CardHeader>
-        <h3 className="usa-card__heading">{name}</h3>
+        <h3>{name}</h3>
       </CardHeader>
       <CardBody>{info}</CardBody>
+      <CardFooter>
+        <Tag>
+          {role}
+        </Tag>
+        <Tag>
+          {year}
+        </Tag>
+      </CardFooter>
     </Card>
   );
 };
