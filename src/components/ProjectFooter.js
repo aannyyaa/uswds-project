@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Footer, FooterNav, Logo } from "@trussworks/react-uswds";
+import { Footer, FooterNav, Title } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
 const ProjectFooter = ({ contactRoute, teamRoute }) => {
@@ -19,13 +19,7 @@ const ProjectFooter = ({ contactRoute, teamRoute }) => {
     <Footer
       size="slim"
       primary={<FooterNav size="slim" links={footerNavItems} />}
-      secondary={
-        <Logo
-          size="slim"
-          image={<img className="usa-footer__logo-img" src="" alt="" />}
-          heading={<p className="usa-footer__logo-heading">{t("agency")}</p>}
-        />
-      }
+      secondary={<Title>{t("agency")}</Title>}
     />
   );
 };
