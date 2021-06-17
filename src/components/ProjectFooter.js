@@ -7,10 +7,10 @@ const ProjectFooter = ({ contactRoute, teamRoute }) => {
   const { t } = useTranslation();
 
   const footerNavItems = [
-    <Link to={teamRoute} className="usa-footer__primary-link">
+    <Link to={t("links.teamRoute")} className="usa-footer__primary-link">
       {t("links.team")}
     </Link>,
-    <Link to={contactRoute} className="usa-footer__primary-link">
+    <Link to={t("links.contactRoute")} className="usa-footer__primary-link">
       {t("links.contact")}
     </Link>,
   ];

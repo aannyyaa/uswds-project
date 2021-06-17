@@ -15,8 +15,8 @@ const ProjectHeader = ({ contactRoute, teamRoute }) => {
   const onClick = () => setExpanded((prvExpanded) => !prvExpanded);
 
   const navItems = [
-    <Link to={teamRoute}>{t("links.team")}</Link>,
-    <Link to={contactRoute}>{t("links.contact")}</Link>,
+    <Link to={t("links.teamRoute")}>{t("links.team")}</Link>,
+    <Link to={t("links.contactRoute")}>{t("links.contact")}</Link>,
   ];
 
   return (
