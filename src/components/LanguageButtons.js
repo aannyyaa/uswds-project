@@ -5,25 +5,15 @@ const LanguageButton = ({ changeLanguage }) => {
   return (
     <GridContainer>
       <Grid row gap>
-        <Grid>
-          <Button
-            type="button"
-            unstyled
-            onClick={() => changeLanguage("en")}
-          >
-            English
-          </Button>
-        </Grid>
-        <Grid>
-          <Button type="button" unstyled onClick={() => changeLanguage("es")}>
-            Español
-          </Button>
-        </Grid>
-        <Grid>
-          <Button type="button" unstyled onClick={() => changeLanguage("zh")}>
-            中文
-          </Button>
-        </Grid>
+        <Button type="button" unstyled onClick={() => changeLanguage("en")}>
+          English
+        </Button>
+        <Button type="button" unstyled onClick={() => changeLanguage("es")}>
+          Español
+        </Button>
+        <Button type="button" unstyled onClick={() => changeLanguage("zh")}>
+          中文
+        </Button>
       </Grid>
     </GridContainer>
   );

@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <Router>
-      <LanguageButtons changeLanguage={changeLanguage} />
-      <ProjectHeader contactRoute={contactRoute} teamRoute={teamRoute} />
+        <LanguageButtons changeLanguage={changeLanguage} />
+        <ProjectHeader contactRoute={contactRoute} teamRoute={teamRoute} />
       <main>
         <Switch>
           <Route path={contactRoute}>
@@ -39,7 +39,7 @@ const App = () => {
           </Route>
         </Switch>
       </main>
-      <ProjectFooter contactRoute={contactRoute} teamRoute={teamRoute} />
+        <ProjectFooter contactRoute={contactRoute} teamRoute={teamRoute} id="footer" />
     </Router>
   );
 };

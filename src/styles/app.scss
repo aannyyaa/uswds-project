@@ -1,9 +1,8 @@
-$footer-height: 155px;
-
 main {
-  min-height: calc(100vh - $footer-height)
+  padding-bottom: 200px;
 }
 
 #footer {
-  height: $footer-height;
+  margin-top: -150px;
 }
+
