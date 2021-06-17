@@ -17,6 +17,7 @@ const ProjectFooter = ({ contactRoute, teamRoute }) => {
 
   return (
     <Footer
+    id= "footer"
       size="slim"
       primary={<FooterNav size="slim" links={footerNavItems} />}
       secondary={

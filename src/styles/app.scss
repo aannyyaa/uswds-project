@@ -1,0 +1,9 @@
+$footer-height: 155px;
+
+main {
+  min-height: calc(100vh - $footer-height)
+}
+
+#footer {
+  height: $footer-height;
+}
