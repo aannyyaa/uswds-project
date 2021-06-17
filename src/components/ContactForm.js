@@ -8,19 +8,19 @@ import {
 import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <Form onSubmit={() => {}}>
-      <Label htmlFor="input-email">{t("Email")}</Label>
+    <Form onSubmit={() => {console.log("Submit!")}}>
+      <Label htmlFor="input-email">{t("form.email")}</Label>
       <TextInput id="input-email" name="input-email" type="text" />
-      <Label htmlFor="input-subject">{t("Subject")}</Label>
+      <Label htmlFor="input-subject">{t("form.subject")}</Label>
       <TextInput id="input-subject" name="input-subject" type="text" />
-      <Label htmlFor="input-message">{t("Message")}</Label>
+      <Label htmlFor="input-message">{t("form.message")}</Label>
       <Textarea
         id="input-message"
         name="input-message"
       />
-      <Button type="submit">{t("Submit")}</Button>
+      <Button type="submit">{t("form.submit")}</Button>
     </Form>
   );
 };

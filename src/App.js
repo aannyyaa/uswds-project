@@ -1,33 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
-import { Header, Title, PrimaryNav } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
 import "./styles/index.scss";
 
+import ProjectHeader from "./components/ProjectHeader";
+import ProjectFooter from "./components/ProjectFooter";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
-
+import LanguageButtons from './components/LanguageButtons'
 
 const App = () => {
-  //will connect to translation file in future (public/locales/en-US/translation.json)
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const contactRoute = "/contact";
-  const teamRoute = "/";
-  const navItems = [
-    <Link to={teamRoute}>{t("Team")}</Link>,
-    <Link to={contactRoute}>{t("Contact")}</Link>,
-  ];
+  const contactRoute = t("links.contactRoute");
+  const teamRoute = t("links.teamRoute");
 
   return (
     <Router>
-      <Header extended={true}>
-        <Title>{t("Project Title")}</Title>
-        <PrimaryNav items={navItems} />
-      </Header>
+      <LanguageButtons />
+      <ProjectHeader />
       <Switch>
         <Route path={contactRoute}>
           <Contact />
@@ -36,7 +30,7 @@ const App = () => {
           <Team />
         </Route>
       </Switch>
-      {/* footer */}
+      <ProjectFooter />
     </Router>
   );
 };
