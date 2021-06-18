@@ -19,22 +19,25 @@ const App = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  
+
+  let currentLanguage = i18n.language;
+
   return (
-    <Router>
-        <LanguageButtons changeLanguage={changeLanguage} />
-        <ProjectHeader />
+    <Router basename={currentLanguage}>
+      <LanguageButtons changeLanguage={changeLanguage} />
+      <ProjectHeader />
       <main>
         <Switch>
           <Route path={t("links.contactRoute")}>
             <Contact />
           </Route>
           <Route exact path={t("links.teamRoute")}>
+            {/* <Route exact path={`/:lang/${t("links.teamRoute")}`} > */}
             <Team />
           </Route>
         </Switch>
       </main>
-        <ProjectFooter id="footer" />
+      <ProjectFooter id="footer" />
     </Router>
   );
 };
