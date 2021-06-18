@@ -9,9 +9,7 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div id="imgContainer">
-        <img src={brooklynBridge} alt="" />
-      </div>
+      <img src={brooklynBridge} alt="" />
       <GridContainer id="contact">
         <h1>{t("subheadings.contact")}</h1>
         <ContactForm />
