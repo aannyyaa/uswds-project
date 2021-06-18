@@ -12,10 +12,10 @@ const Team = () => {
       <Grid>
         <h1>{t("subheadings.team")}</h1>
         <Grid row gap="lg">
-          <Grid col={4}>
+          <Grid mobile={{ col: "fill" }} tablet={{ col: 6 }} desktop={{ col: 4 }}>
             <h2>{t("getToKnowTeam")}</h2>
           </Grid>
-          <Grid col={8}>
+          <Grid mobile={{ col: "fill" }} tablet={{ col: 6 }} desktop={{ col: 8 }}>
             <p>{t("lorem")}</p>
           </Grid>
         </Grid>
