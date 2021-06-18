@@ -30,8 +30,8 @@ const App = () => {
 
   return (
     <div>
-      <LanguageButtons changeLanguage={changeLanguage} />
-      <ProjectHeader currentLanguage={currentLanguage} />
+      {/* <LanguageButtons changeLanguage={changeLanguage} /> */}
+      <ProjectHeader currentLanguage={currentLanguage} changeLanguage={changeLanguage}/>
       <main>
         <Switch>
           <Route path={`/:lang${t("links.contactRoute")}`}>
