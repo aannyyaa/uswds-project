@@ -15,7 +15,7 @@ import ProjectHeader from "./components/ProjectHeader";
 import ProjectFooter from "./components/ProjectFooter";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
-import LanguageButtons from "./components/LanguageButtons";
+// import LanguageButtons from "./components/LanguageButtons";
 
 const App = () => {
   const { t, i18n } = useTranslation();
