@@ -8,15 +8,15 @@ import {
 } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
-const ProjectHeader = ({ contactRoute, teamRoute }) => {
+const ProjectHeader = ({ currentLanguage }) => {
   const { t } = useTranslation();
 
   const [expanded, setExpanded] = useState(false);
   const onClick = () => setExpanded((prvExpanded) => !prvExpanded);
 
   const navItems = [
-    <Link to={`/:lang/${t("links.teamRoute")}`}>{t("links.team")}</Link>,
-    <Link to={`/:lang/${t("links.contactRoute")}`}>{t("links.contact")}</Link>,
+    <Link to={`/${currentLanguage}${t("links.teamRoute")}`}>{t("links.team")}</Link>,
+    <Link to={`/${currentLanguage}${t("links.contactRoute")}`}>{t("links.contact")}</Link>,
   ];
 
   return (

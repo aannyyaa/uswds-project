@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { Footer, FooterNav, Title } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
 
-const ProjectFooter = ({ contactRoute, teamRoute }) => {
+const ProjectFooter = ({ currentLanguage}) => {
   const { t } = useTranslation();
 
   const footerNavItems = [
-    <Link to={t("links.teamRoute")} className="usa-footer__primary-link">
+    <Link to={`/${currentLanguage}${t("links.teamRoute")}`} className="usa-footer__primary-link">
       {t("links.team")}
     </Link>,
-    <Link to={t("links.contactRoute")} className="usa-footer__primary-link">
+    <Link to={`/${currentLanguage}${t("links.contactRoute")}`} className="usa-footer__primary-link">
       {t("links.contact")}
     </Link>,
   ];

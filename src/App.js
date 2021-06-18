@@ -31,18 +31,18 @@ const App = () => {
   return (
     <div>
       <LanguageButtons changeLanguage={changeLanguage} />
-      <ProjectHeader />
+      <ProjectHeader currentLanguage={currentLanguage} />
       <main>
         <Switch>
-          <Route path={`/:lang/${t("links.contactRoute")}`}>
+          <Route path={`/:lang${t("links.contactRoute")}`}>
             <Contact />
           </Route>
-            <Route exact path={`/:lang/${t("links.teamRoute")}`} >
+            <Route exact path={`/:lang${t("links.teamRoute")}`} >
             <Team />
           </Route>
         </Switch>
       </main>
-      <ProjectFooter id="footer" />
+      <ProjectFooter currentLanguage={currentLanguage} id="footer" />
     </div>
   );
 };
