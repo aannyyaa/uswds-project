@@ -7,6 +7,7 @@ import {
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
 import { useTranslation } from "react-i18next";
+import { Grid} from "@trussworks/react-uswds";
 
 import "./styles/index.scss";
 import "./styles/app.scss";
@@ -15,7 +16,6 @@ import ProjectHeader from "./components/ProjectHeader";
 import ProjectFooter from "./components/ProjectFooter";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
-// import LanguageButtons from "./components/LanguageButtons";
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -29,8 +29,7 @@ const App = () => {
   let currentLanguage = i18n.language;
 
   return (
-    <div>
-      {/* <LanguageButtons changeLanguage={changeLanguage} /> */}
+    <Grid>
       <ProjectHeader currentLanguage={currentLanguage} changeLanguage={changeLanguage}/>
       <main>
         <Switch>
@@ -43,7 +42,7 @@ const App = () => {
         </Switch>
       </main>
       <ProjectFooter currentLanguage={currentLanguage} id="footer" />
-    </div>
+    </Grid>
   );
 };
 
