@@ -8,7 +8,7 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <GridContainer id="contact">
-      <h2>{t("subheadings.contact")}</h2>
+      <h1>{t("subheadings.contact")}</h1>
       <ContactForm />
     </GridContainer>
   );

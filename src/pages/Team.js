@@ -8,7 +8,7 @@ const Team = () => {
   const { t } = useTranslation();
   return (
     <GridContainer>
-      <h2>{t("subheadings.team")}</h2>
+      <h1>{t("subheadings.team")}</h1>
       <CardGroup>
         {t("teamMembers", { returnObjects: true }).map((elem) => {
           return (
