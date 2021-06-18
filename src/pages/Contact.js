@@ -12,6 +12,7 @@ const Contact = () => {
       <img src={brooklynBridge} alt="" />
       <GridContainer id="contact">
         <h1>{t("subheadings.contact")}</h1>
+        <h2>{t("askUsQuestions")}</h2>
         <ContactForm />
       </GridContainer>
     </div>
