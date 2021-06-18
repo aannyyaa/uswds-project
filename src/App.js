@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  Route,
+  Switch,
+  useHistory,
+} from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
 import { useTranslation } from "react-i18next";
@@ -15,30 +19,31 @@ import LanguageButtons from "./components/LanguageButtons";
 
 const App = () => {
   const { t, i18n } = useTranslation();
+  let history = useHistory();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    history.push(`/${lng}/`)
   };
 
   let currentLanguage = i18n.language;
 
   return (
-    <Router basename={currentLanguage}>
+    <div>
       <LanguageButtons changeLanguage={changeLanguage} />
       <ProjectHeader />
       <main>
         <Switch>
-          <Route path={t("links.contactRoute")}>
+          <Route path={`/:lang/${t("links.contactRoute")}`}>
             <Contact />
           </Route>
-          <Route exact path={t("links.teamRoute")}>
-            {/* <Route exact path={`/:lang/${t("links.teamRoute")}`} > */}
+            <Route exact path={`/:lang/${t("links.teamRoute")}`} >
             <Team />
           </Route>
         </Switch>
       </main>
       <ProjectFooter id="footer" />
-    </Router>
+    </div>
   );
 };
 

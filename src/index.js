@@ -3,14 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback="loading">
-      <App />
-    </Suspense>
+    <Router>
+      <Suspense fallback="loading">
+        <App />
+      </Suspense>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
