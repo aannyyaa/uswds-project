@@ -1,9 +1,12 @@
+$mainBackgroundColor: #e1f3f8;
+// @import './settings.scss';
+
 main {
-  padding-bottom: 200px;
-  background-color: #e1f3f8;
+  padding-bottom: 250px;
+  // background-color: $theme-color-primary-light;
+  background-color: $mainBackgroundColor;
 }
 
 #footer {
-  margin-top: -150px;
+  margin-top: -200px;
 }
-
