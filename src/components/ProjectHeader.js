@@ -28,16 +28,20 @@ const ProjectHeader = ({ currentLanguage, changeLanguage }) => {
 
   return (
     <Header extended={true}>
-      <Grid row>
-        <Grid tablet={{ col: 6 }} desktop={{ col: 9 }}>
-          <Title>{t("projectTitle")}</Title>
-        </Grid>
-        <Grid tablet={{ col: 6 }} desktop={{ col: 3 }}>
+      <Grid row id="languageContainer">
+        <Grid >
           <LanguageButtons changeLanguage={changeLanguage} />
         </Grid>
       </Grid>
 
-      <NavMenuButton label="Menu" onClick={onClick} />
+      <Grid row>
+        <Grid tablet={{ col: 6 }} desktop={{ col: 12 }}>
+          <Title>{t("projectTitle")}</Title>
+        </Grid>
+        <Grid tablet={{ col: 6 }} id="NavMenuButtonContainer">
+          <NavMenuButton label="Menu" onClick={onClick} />
+        </Grid>
+      </Grid>
       <PrimaryNav
         items={navItems}
         mobileExpanded={expanded}
