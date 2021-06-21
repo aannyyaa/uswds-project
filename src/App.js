@@ -20,8 +20,7 @@ const App = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    history.push(`/${lng}/${location.pathname.split('/')[2]}`);
-    // console.log("PATH", location.pathname.split('/')[2])
+    history.push(`/${lng}/${location.pathname.split("/")[2]}`);
   };
 
   let currentLanguage = i18n.language;
