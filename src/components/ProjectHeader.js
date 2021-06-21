@@ -5,6 +5,7 @@ import {
   Title,
   PrimaryNav,
   NavMenuButton,
+  NavDropDownButton,
   Grid,
 } from "@trussworks/react-uswds";
 import { useTranslation } from "react-i18next";
@@ -17,6 +18,13 @@ const ProjectHeader = ({ currentLanguage, changeLanguage }) => {
   const [expanded, setExpanded] = useState(false);
   const onClick = () => setExpanded((prvExpanded) => !prvExpanded);
 
+  const [isOpen, setIsOpen] = useState([false, false])
+  const onToggle = (index) => setIsOpen((prevIsOpen) => {
+    const newIsOpen = [false, false]
+    newIsOpen[index] = !prevIsOpen[index]
+    return newIsOpen
+  })
+
   const navItems = [
     <Link to={`/${currentLanguage}${t("links.teamRoute")}`}>
       {t("links.team")}
@@ -24,6 +32,10 @@ const ProjectHeader = ({ currentLanguage, changeLanguage }) => {
     <Link to={`/${currentLanguage}${t("links.contactRoute")}`}>
       {t("links.contact")}
     </Link>,
+    <NavDropDownButton key="languageDropDown" label="Select Language" menuId="languages" 
+    isOpen={isOpen[0]}
+    onToggle={() => onToggle(0)}
+    />
   ];
 
   return (
