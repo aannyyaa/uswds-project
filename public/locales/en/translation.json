@@ -10,6 +10,7 @@
     "team": "Meet Our Team",
     "contact": "Contact Us"
   },
+  "selectLanguage": "Select Language",
   "teamMembers": [
     {
       "id": "1",
