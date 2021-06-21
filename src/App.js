@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
@@ -24,6 +24,10 @@ const App = () => {
   };
 
   let currentLanguage = i18n.language;
+
+  useEffect(() => {
+    document.title = t("docTitle");
+  }, [currentLanguage, t]);
 
   return (
     <Grid>
