@@ -27,7 +27,10 @@ const App = () => {
 
   useEffect(() => {
     document.title = `${t("docTitle")}`;
+    document.documentElement.lang = currentLanguage
   }, [currentLanguage]);
+
+
 
   return (
     <Grid>
