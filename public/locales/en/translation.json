@@ -1,8 +1,9 @@
 {
+  "docTitle": "CICxCTO",
   "projectTitle": "Civic Innovation Corps @ NYC MOCTO",
   "links": {
     "team": "Team",
-    "teamRoute": "/",
+    "teamRoute": "/team",
     "contact": "Contact",
     "contactRoute": "/contact"
   },
@@ -10,6 +11,7 @@
     "team": "Meet Our Team",
     "contact": "Contact Us"
   },
+  "selectLanguage": "Select Language",
   "teamMembers": [
     {
       "id": "1",

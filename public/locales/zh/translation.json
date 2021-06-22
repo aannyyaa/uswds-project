@@ -1,8 +1,9 @@
 {
+  "docTitle": "zhCICxCTO",
   "projectTitle": "[zh] Civic Innovation Corps @ NYC MOCTO",
   "links": {
     "team": "[zh] Team",
-    "teamRoute": "/",
+    "teamRoute": "/team",
     "contact": "[zh] Contact",
     "contactRoute": "/contact"
   },
@@ -10,6 +11,7 @@
     "team": "[zh] Meet Our Team",
     "contact": "[zh] Contact Us"
   },
+  "selectLanguage": "[zh] Select Language",
   "teamMembers": [
     {
       "id": "1",

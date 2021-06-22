@@ -1,13 +1,9 @@
-import React from "react";
-import {
-  Route,
-  Switch,
-  useHistory,
-} from "react-router-dom";
+import React, { useEffect } from "react";
+import { Redirect, Route, Switch, useHistory, useLocation } from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
 import { useTranslation } from "react-i18next";
-import { Grid} from "@trussworks/react-uswds";
+import { Grid } from "@trussworks/react-uswds";
 
 import "./styles/index.scss";
 import "./styles/app.scss";
@@ -20,23 +16,37 @@ import Team from "./pages/Team";
 const App = () => {
   const { t, i18n } = useTranslation();
   let history = useHistory();
+  let location = useLocation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    history.push(`/${lng}/`)
+    history.push(`/${lng}/${location.pathname.split("/")[2]}`);
   };
 
   let currentLanguage = i18n.language;
 
+  useEffect(() => {
+    document.title = `${t("docTitle")}`;
+    document.documentElement.lang = currentLanguage
+  }, [currentLanguage]);
+
+
+
   return (
     <Grid>
-      <ProjectHeader currentLanguage={currentLanguage} changeLanguage={changeLanguage}/>
+      <ProjectHeader
+        currentLanguage={currentLanguage}
+        changeLanguage={changeLanguage}
+      />
       <main>
         <Switch>
+          <Route exact path='/'>
+            <Redirect to={`/${currentLanguage}${t("links.teamRoute")}`}/>
+          </Route>
           <Route path={`/:lang${t("links.contactRoute")}`}>
             <Contact />
           </Route>
-            <Route exact path={`/:lang${t("links.teamRoute")}`} >
+          <Route exact path={`/:lang${t("links.teamRoute")}`}>
             <Team />
           </Route>
         </Switch>

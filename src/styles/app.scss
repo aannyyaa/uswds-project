@@ -1,9 +1,16 @@
+@import './settings.scss';
+
 main {
-  padding-bottom: 200px;
-  background-color: #e1f3f8;
+  padding-bottom: 250px;
+  background-color: $background-color;
 }
 
 #footer {
-  margin-top: -150px;
+  margin-top: -200px;
 }
 
+#NavMenuButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
