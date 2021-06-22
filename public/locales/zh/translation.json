@@ -3,7 +3,7 @@
   "projectTitle": "[zh] Civic Innovation Corps @ NYC MOCTO",
   "links": {
     "team": "[zh] Team",
-    "teamRoute": "/",
+    "teamRoute": "/team",
     "contact": "[zh] Contact",
     "contactRoute": "/contact"
   },
