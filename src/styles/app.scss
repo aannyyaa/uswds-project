@@ -1,10 +1,8 @@
-$mainBackgroundColor: #e1f3f8;
-// @import './settings.scss';
+@import './settings.scss';
 
 main {
   padding-bottom: 250px;
-  // background-color: $theme-color-primary-light;
-  background-color: $mainBackgroundColor;
+  background-color: $background-color;
 }
 
 #footer {

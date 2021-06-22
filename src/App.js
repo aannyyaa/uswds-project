@@ -26,8 +26,8 @@ const App = () => {
   let currentLanguage = i18n.language;
 
   useEffect(() => {
-    document.title = t("docTitle");
-  }, [currentLanguage, t]);
+    document.title = `${t("docTitle")}`;
+  }, [currentLanguage]);
 
   return (
     <Grid>
