@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route, Switch, useHistory, useLocation } from "react-router-dom";
+import { Redirect, Route, Switch, useHistory, useLocation } from "react-router-dom";
 import "@trussworks/react-uswds/lib/uswds.css";
 import "@trussworks/react-uswds/lib/index.css";
 import { useTranslation } from "react-i18next";
@@ -37,6 +37,9 @@ const App = () => {
       />
       <main>
         <Switch>
+          <Route exact path='/'>
+            <Redirect to={`/${currentLanguage}${t("links.teamRoute")}`}/>
+          </Route>
           <Route path={`/:lang${t("links.contactRoute")}`}>
             <Contact />
           </Route>
