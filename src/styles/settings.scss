@@ -1,3 +1,7 @@
+@import "~uswds/src/stylesheets/theme/_uswds-theme-general.scss";
+
+@import "~uswds/src/stylesheets/theme/_uswds-theme-color.scss";
+
 /* GENERAL */
 $theme-image-path: "~uswds/src/img";
 $theme-color-primary: "blue-cool-60v";
@@ -25,4 +29,4 @@ $theme-link-hover-color: "violet-40v";
 $theme-link-visited-color: "violet-40v";
 $theme-body-font-size: "md";
 
-$background-color: #e1f3f8;
+$background-color: pink;
