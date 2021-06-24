@@ -6,8 +6,10 @@
 
 @import "./settings.scss";
 
-@import "./app.scss";
-
 @import "~uswds/src/stylesheets/packages/_required.scss";
 
 @import "uswds";
+
+// import app.scss at the bottom NOT above settings 
+
+@import "./app.scss";

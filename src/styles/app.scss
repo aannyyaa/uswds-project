@@ -1,6 +1,13 @@
+//don't need to import settings.scss here 
+
 main {
   padding-bottom: 250px;
-  background-color: $theme-color-primary-light;
+  // background-color: $theme-color-primary-light;
+  //function
+  background-color: color($theme-color-primary-lighter); //WORKS
+  //mixin
+  @include u-bg($theme-color-primary-light); //WORKS
+  // background-color: $background-color; //WORKS but uses hex code instead of token
 }
 
 #footer {
