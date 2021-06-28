@@ -15,7 +15,8 @@ const Team = ({ name, info, photo, role, year }) => {
       containerProps={{ className: "border-0" }}
     >
       <CardMedia>
-        <img src={photo} alt="" />
+        {/* add descriptive alt tag "A headshot of ..." */}
+        <img src={photo} alt="" /> 
       </CardMedia>
       <CardHeader>
         <h2>{name}</h2>

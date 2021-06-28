@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import { Grid } from "@trussworks/react-uswds";
 
 import "./styles/index.scss";
-import "./styles/app.scss";
 
 import ProjectHeader from "./components/ProjectHeader";
 import ProjectFooter from "./components/ProjectFooter";
@@ -23,12 +22,12 @@ const App = () => {
     history.push(`/${lng}/${location.pathname.split("/")[2]}`);
   };
 
-  let currentLanguage = i18n.language;
+  let currentLanguage = i18n.language; //can use language detector
 
   useEffect(() => {
     document.title = `${t("docTitle")}`;
     document.documentElement.lang = currentLanguage
-  }, [currentLanguage]);
+  }, [currentLanguage, t]);
 
 
 
@@ -43,12 +42,14 @@ const App = () => {
           <Route exact path='/'>
             <Redirect to={`/${currentLanguage}${t("links.teamRoute")}`}/>
           </Route>
+          {/* check if lang is in my defined languages */}
           <Route path={`/:lang${t("links.contactRoute")}`}>
             <Contact />
           </Route>
           <Route exact path={`/:lang${t("links.teamRoute")}`}>
             <Team />
           </Route>
+          {/* unfound routes - if lang not found*/}
         </Switch>
       </main>
       <ProjectFooter currentLanguage={currentLanguage} id="footer" />

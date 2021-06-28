@@ -9,6 +9,7 @@ import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* basename={i18n.language} */}
     <Router>
       <Suspense fallback="loading">
         <App />
